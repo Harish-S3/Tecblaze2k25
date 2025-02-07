@@ -4,47 +4,15 @@
 <div align="center">
 
   
-# TALOS WEBSITE
+# TECBLAZE 2025 WEBSITE
 </div>
 
 <br>
 <div align="center">
   
-![Talos.png!](https://jesvijonathan.github.io/talos-website/talos_web.png "TALOS")
-
-![](https://komarev.com/ghpvc/?username=jesvijonathan)
-
-> **You are free to use my work :)** <br>
-> <em>**ENTIRE WEBSITE IS HARDCODED, AKA LEGIT WORK :)**</em>
+original template by jesvijonathan
 </div>
   
-  
-Firstly, I would like to mention that this was a 1 week solo project and it turned out awsm ! <br>
-Secondly, everything in this project is hardcoded from scratch ! & <br>
-At last, Hi & I appreciate the time you took to visit this page.<br>
-
-
-## About
->This project started as a project to my portfolio.
->As an event website for cit, AI & DS DEPT. Symposium.
->The project took a duration of 1.5 weeks.
->I wanted things to look unique & different so i decided to hardcode everything.
->All element are built from scratch.
->It sure does stand out from UI/UX designers perspective
->My objective was clear from the start, credit & addition of portfolio project. nothing else.
->on second thought, i couldev made it better but thats for another time given that this projects time constrain was limited.
->lots of things were worked on here, like website compression (<4mb), speed, responsiveness, event page, popup page, animation, file heirarchy, release, trailer, analytics, content, simplicity, ui/ux, etc.
->I had a good time working on this project, the usesr feedback was positive overall...
->I usually work on more advanced projects like OS's, Mods, Tools & Automation scripts.. but this was a side quest for me xD
-
-# Teaser
-
-<div align="center">
-  
-[![Teaser](https://img.youtube.com/vi/38wsXLJCXu0/0.jpg)](https://www.youtube.com/watch?v=38wsXLJCXu0)
-
-Teaser Video : https://www.youtube.com/watch?v=38wsXLJCXu0
-</div>
 
 ## Things I would like to improvise  
 <sub>
