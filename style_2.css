@@ -576,16 +576,16 @@ body::-webkit-scrollbar-thumb:hover {
   background: var(--scrl); 
 }
 .topic-img-con {
-  height: 24vw;
-  width: 24vw;
+  height: 22vw;
+  width: 27vw;
   background-color: var(--circ);
   border-radius: 54% 46% 70% 30% / 30% 68% 32% 70%;
   animation: morph 10s ease-in-out;
   animation-iteration-count: infinite;
 }
 .tic1 {
-  height: 20vw;
-  width: 20vw;
+  height: 24vw;
+  width: 27vw;
   background-color: #ffffff34;
   border-radius: 58% 42% 29% 71% / 63% 58% 42% 37%;
   animation: morph1 5s ease-in-out;
@@ -743,54 +743,31 @@ body::-webkit-scrollbar-thumb:hover {
   width: 100%;
   position: absolute;
   background-repeat: no-repeat;
-  /* display: none; */
-  /* box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.5); */
+
 }
 .p1 {
   background-image: url("./srm-logo.png");
-  /* background-image: url("./CIT\ Logo\ \(Actual\)\ PNG\ Format.png"); */
 background-position: center;
 background-size: contain;background-repeat: no-repeat;
-background-size: 60%;
+background-size: 80%;
 
   border-radius:  0%;
-  top: -10%;
-  left: 6%;
+  top: -5%;
+  left: 3%;
 }
 .p2 {
   
-    background-image: url("./t.webp"); 
+    background-image: url("./phoenix.jpg"); 
     left: 3%;
-    
-  /* background-image: url("./Group 25.png");
-  left: 0%; */
 
   background-position: center;
   background-size: contain;background-repeat: no-repeat;
-  background-size: 57%;
+  background-size: 69%;
     border-radius:  0%;
-    top: -10%;
-    /* background-image: url("./photoroom (13).webp");
-    background-position: center;
-    background-size: contain;background-repeat: no-repeat;
-    background-size: 120%;
-      border-radius:  100%;
-      top: -20%;
-      left: -3%; */
+    top: 2%;
+    left: 1%;
+
   }
-.p3 {
-  /* background-image: url("./boy.png");
-  border-radius: 100%;
-  top: -21%;
-  left: -3%; */
-  background-image: url("./photoroom (13).webp");
-  background-position: center;
-  background-size: contain;background-repeat: no-repeat;
-  background-size: 120%;
-    border-radius:  100%;
-    top: -20%;
-    left:-1%; transform: scaleX(-1);
-}
 
 .container {
   width: 100%;
