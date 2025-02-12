@@ -638,9 +638,9 @@ body::-webkit-scrollbar-thumb:hover {
   margin-left: 10vw;
 }
 .spon_m{
-  height: 12vw;
+  height: 14vw;
   /* width: 12vw; */
-  max-height: 80px;
+  max-height: 120px;
 }
 
 .spon_n{
