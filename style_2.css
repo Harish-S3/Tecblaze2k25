@@ -173,30 +173,32 @@
 
     transform: translate(-50%, -50%) scale(.5);
   }
+  .main-title {
+    position: fixed;
+    color: rgb(255, 255, 255);
+    font-size: 8vw;
+    font-weight: 1000;
+    text-align: center;
+    padding: 10px;
+    border: 0px solid rgb(0, 0, 0);
+    top: 50%;
+    transform: translate(0%, -50%);
+    transition: 0.3s ease-in-out;
+    font-weight: 700;
+    text-align: center;
+    z-index: 3;
+    width: 100%;
+    mix-blend-mode: difference;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 
-.main-title{
-
-position: fixed;    
-color: rgb(255, 255, 255);
-font-size: 8vw;
-font-weight: 1000;
-text-align: center;
-padding: 10px;
-border: 0px solid rgb(0, 0, 0);
-top: 50%;
-transform: translate(0%, -50%);
-transition: 0.3s ease-in-out;
-font-weight: 700;
-text-align: center;
-z-index: 3;
-width: 100%;
-mix-blend-mode: difference;
-display: flex;
-align-items: center;
-flex-direction: column;
-
-
-}
+  @media only screen and (max-width: 768px) {
+    .main-title {
+      font-size: 12vw;
+    }
+  }
 #logo_id{
   opacity: 0;
   transition: 0.2s ease;
