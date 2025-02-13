@@ -173,32 +173,30 @@
 
     transform: translate(-50%, -50%) scale(.5);
   }
-  .main-title {
-    position: fixed;
-    color: rgb(255, 255, 255);
-    font-size: 8vw;
-    font-weight: 1000;
-    text-align: center;
-    padding: 10px;
-    border: 0px solid rgb(0, 0, 0);
-    top: 50%;
-    transform: translate(0%, -50%);
-    transition: 0.3s ease-in-out;
-    font-weight: 700;
-    text-align: center;
-    z-index: 3;
-    width: 100%;
-    mix-blend-mode: difference;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
 
-  @media only screen and (max-width: 768px) {
-    .main-title {
-      font-size: 12vw;
-    }
-  }
+.main-title{
+
+position: fixed;    
+color: rgb(255, 255, 255);
+font-size: 8vw;
+font-weight: 1000;
+text-align: center;
+padding: 10px;
+border: 0px solid rgb(0, 0, 0);
+top: 50%;
+transform: translate(0%, -50%);
+transition: 0.3s ease-in-out;
+font-weight: 700;
+text-align: center;
+z-index: 3;
+width: 100%;
+mix-blend-mode: difference;
+display: flex;
+align-items: center;
+flex-direction: column;
+
+
+}
 #logo_id{
   opacity: 0;
   transition: 0.2s ease;
@@ -631,28 +629,47 @@ body::-webkit-scrollbar-thumb:hover {
 .sermm {
   padding: 2vw;
 }
-
-.spon{
-  height: max-content;
-  
-  padding-bottom: 3vw;
-  padding-top: 2vw;
-  margin-left: 10vw;
-}
-.spon_m{
-  height: 14vw;
-  /* width: 12vw; */
-  max-height: 120px;
+.sponsor-container {
+  width: 100%;
+  overflow: hidden;
+  background: white;
+  padding: 20px 0;
 }
 
-.spon_n{
-  padding-top: 1vw;
-  bottom: 0%; 
-    text-align: center;
-    color:var(--fnt-colr);
-    font-size: 1vw;
+.sponsor-track {
+  display: flex;
+  width: fit-content;
 }
 
+.sponsor-group {
+  display: flex;
+  gap: 60px;
+  animation: scroll 30s linear infinite;
+  padding-right: 60px;
+}
+
+.spon {
+  flex: 0 0 auto;
+}
+
+.spon_m {
+  width: 120px;
+  height: 150px;
+  object-fit: contain;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.sponsor-group:hover {
+  animation-play-state: paused;
+}
 .credb{
   background-color:var(--bkg-colr);
   color:var(--fnt-colr);
