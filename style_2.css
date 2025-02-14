@@ -769,19 +769,17 @@ body::-webkit-scrollbar-thumb:hover {
 background-position: center;
 background-size: contain;background-repeat: no-repeat;
 background-size: 80%;
-
   border-radius:  0%;
   top: -5%;
   left: 3%;
 }
 .p2 {
   
-    background-image: url("./phoenix.jpg"); 
+    background-image: url("./tbb.png"); 
     left: 3%;
-
   background-position: center;
   background-size: contain;background-repeat: no-repeat;
-  background-size: 69%;
+  background-size: 160%;
     border-radius:  0%;
     top: 2%;
     left: 1%;
