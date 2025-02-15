@@ -775,14 +775,14 @@ background-size: 80%;
 }
 .p2 {
   
-    background-image: url("./tbb.png"); 
+    background-image: url("./tb.png"); 
     left: 3%;
   background-position: center;
   background-size: contain;background-repeat: no-repeat;
-  background-size: 160%;
+  background-size: 170%;
     border-radius:  0%;
     top: 2%;
-    left: 1%;
+    left: -9%;
 
   }
 
