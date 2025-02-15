@@ -425,7 +425,9 @@ burger()
         <div class="descriptions">
           <h1>Thesis Thunder</h1>
           <p>
-            Paper presentation enables you to unveil your ideas and gain exposure to various insightful concepts. You can reveal the truths behind unexplored phenomena in the extensive world of science and technology by exhibiting your ingenious thoughts and let your innovations speak through your Paper.
+            <b>Thesis Thunder</b> is a research paper presentation event at TecBlaze Symposium. 
+            This is your opportunity to showcase groundbreaking research in <b>AI, Data Science, Cybersecurity, IoT, Blockchain</b>, and more!  
+            Present your work to a panel of experts and gain valuable insights into academic and industry research.
           </p>
           <button id="ev1" onClick="reg_view(this.id)"><a href="event-thesis-thunder.html" target="_blank">More</a></button>
         </div>
@@ -566,40 +568,6 @@ burger()
   </div>
 </section>
 
-
-<section class="pop">
-<div class="boir" id="boir">  
-<div class="cls" id="x" onClick="reg_view(this.id)"><a>x</a></div>
-<div class="even_name" id="reg_ti">--Auto Title Here--</div>
-<div class="even_slog" id="reg_slog">--Auto Slogan Here--</div>
-<div class="popc">
-<div class="hi"> 
-  <div class="even_d_t"><u>Description</u></div>
-  <div class="even_desc" id="reg_cont">--Auto Description Here--</div>
-</div>
-<div>|</div>
-<div class="cenli"></div>
-<div class="hi"><div class="even_d_t ccc"><u>Rules</u></div>
- 
-
-  <ul class="even_desc_r" id="reg_rules" style="list-style-type: square;">
---Auto Rules Here--
-</ul>
- </div>
-
- <div class="botbut">
-<a class="b1" id="reg_con" target="_blank" href="">Contact</a>
-<a class="b2" href="https://maps.app.goo.gl/MJv4Fbh5W4FdNW1N8" target="_blank">Venue</a>
-<a class="b4" id="reg_po" href="https://www.instagram.com/tecblaze2025/" target="_blank">Poster</a>
-<a class="b5" id="reg_sha" onclick="return copyTextFromElement();"   href="">Share</a>
-<input type="text" value="https://github.com/Harish-S3/Tecblaze2k25" id="myInput" style="display: none;">
-
-
-<a class="b3" id="reg_reg" href="https://github.com/Harish-S3/Tecblaze2k25" target="_blank">Register</a>
-
- </div>
-</div>
-</div>
 <script> 
 
   function cls_b(){
@@ -620,155 +588,6 @@ burger()
     document.getElementById("blurbg").style.display = "none";
     $('.blurbg').css({zindex:"-15"});
             var myCover = document.querySelector("#boir");
-            
-            
-            if (isMobile == true) {
-  switch (clicked_id) {
-    case "ev1":
-      window.open("./event-thesis-thunder.html", "_blank");
-      break;
-    case "ev2":
-      window.open("./event-project-contest.html", "_blank");
-      break;
-    case "ev3":
-      window.open("./event-web-design.html", "_blank");
-      break;
-    case "ev4":
-      window.open("./event-poster-making.html", "_blank");
-      break;
-    case "ev5":
-      window.open("./event-codezen.html", "_blank");
-      break;
-    case "ev6":
-      window.open("./event-techconnex.html", "_blank");
-      break;
-    case "ev7":
-      window.open("./event-quizzera.html", "_blank");
-      break;
-    case "ev8":
-      window.open("./event-ipl-auction.html", "_blank");
-      break;
-    case "ev9":
-      window.open("./event-photography.html", "_blank");
-      break;
-    case "ev10":
-      window.open("./event-bgmi.html", "_blank");
-      break;
-  }
-}
-            
-            else{
-              var de =  "description";
-              var ti =  "title";
-              var ca =  "caption";
-              var ru =  "rules";
-              var re =  "https://github.com/Harish-S3/Tecblaze2k25/";  
-              var co =  "tel:+91212312312";
-              var li = ""
-              var po =  "https://www.instagram.com/tecblaze2025/";
-
-              switch (clicked_id) {
-  case "ev1":
-    de = "Present your research and ideas in a competitive environment. Gain exposure and share your insights on various scientific and technological topics.";
-    ti = "Thesis Thunder";
-    ca = "Research your way into the future";
-    ru = "<li>● Maximum 5 members per team.</li><li>● Individual participation allowed.</li><li>● 120 minutes time limit.</li><li>● Maximum challenges solved wins.</li><li>● Prize worth Rs.8000.</li><li>● Registered members only.</li>";
-    re = "https://dummyformlink2.com";
-    co = "tel:+910987654321"; // Dummy number
-    li = "./event-thesis-thunder.html";
-    po = "https://dummyinstalink2.com";
-    break;
-  case "ev2":
-    de = "Showcase your innovative projects and compete with fellow participants. Exhibit your technical skills and creativity in this exciting contest.";
-    ti = "Project Contest";
-    ca = "Build your ideas";
-    ru = "<li>● Topics related to AI and Data Science.</li><li>● Teams of 1-4 members.</li><li>● Submit abstract and PowerPoint by the deadline.</li><li>● Judged on Innovation, Comprehension, and Presentation.</li><li>● Top 6 teams advance to round 2.</li><li>● Contact for clarifications.</li>";
-    re = "https://dummyformlink3.com";
-    co = "tel:+911122334455"; // Dummy number
-    li = "./event-project-contest.html";
-    po = "https://dummyinstalink3.com";
-    break;
-  case "ev3":
-    de = "Compete in a web design challenge to showcase your design skills. Create visually appealing and functional websites to impress the judges.";
-    ti = "Web Design";
-    ca = "Design the Web";
-    ru = "<li>● Team event with up to 3 members.</li><li>● Code snippets in C, C++, Java, Python.</li><li>● Discuss and find outputs as a team.</li><li>● Winners based on correct outputs.</li>";
-    re = "https://dummyformlink4.com";
-    co = "tel:+915566778899"; // Dummy number
-    li = "./event-web-design.html";
-    po = "https://dummyinstalink4.com";
-    break;
-  case "ev4":
-    de = "Create an informative poster based on a given theme. Showcase your creativity and design skills in this online event.";
-    ti = "Poster Making";
-    ca = "Designing the Web";
-    ru = "<li>● Individual event, one entry per participant.</li><li>● Use any editing software.</li><li>● No watermarks, original work only.</li><li>● Submit before the deadline.</li><li>● Judged on relevance, originality, composition, creativity.</li>";
-    re = "https://dummyformlink5.com";
-    co = "tel:+919876543210"; // Dummy number
-    li = "./event-poster-making.html";
-    po = "https://dummyinstalink5.com";
-    break;
-  case "ev5":
-    de = "Test your coding skills in a competitive environment. Solve challenging problems and showcase your programming prowess.";
-    ti = "Codezen";
-    ca = "Fastest Finger First";
-    ru = "<li>● Teams of 3 players.</li><li>● 1 minute per song.</li><li>● No lip movements allowed.</li><li>● Headset can be swapped among team members.</li><li>● Registered teams only.</li>";
-    re = "https://dummyformlink6.com";
-    co = "tel:+914455667788"; // Dummy number
-    li = "./event-codezen.html";
-    po = "https://dummyinstalink6.com";
-    break;
-  case "ev6":
-    de = "Participate in a fun guessing game focused on technology terms. Test your knowledge and intuition in this interactive event.";
-    ti = "Techconnex";
-    ca = "It's all in the click";
-    ru = "<li>● Individual online event.</li><li>● Use mobile phones or DSLR cameras.</li><li>● Theme: Street Photography.</li><li>● Submit in document format via WhatsApp.</li><li>● Submission deadline: 15th to 22nd May 2022.</li><li>● Basic editing allowed.</li><li>● Cash prize for winners.</li>";
-    re = "https://dummyformlink7.com";
-    co = "tel:+912233445566"; // Dummy number
-    li = "./event-techconnex.html";
-    po = "https://dummyinstalink7.com";
-    break;
-  case "ev7":
-    de = "Engage in a tech quiz that covers a wide range of topics in technology. Challenge your knowledge and learn new things in this competitive quiz.";
-    ti = "Quizzera";
-    ca = "Start The Hunt";
-    ru = "<li>● Teams of 2-5 members.</li><li>● Complete the hunt within the time limit.</li><li>● Stick together until the hunt is over.</li><li>● Hunt within campus, gather all clues.</li><li>● One phone per team to capture clues.</li><li>● First team with all clues wins.</li><li>● Foul play leads to disqualification.</li>";
-    re = "https://dummyformlink8.com";
-    co = "tel:+913344556677"; // Dummy number
-    li = "./event-quizzera.html";
-    po = "https://dummyinstalink8.com";
-    break;
-  case "ev8":
-    de = "Experience the thrill of an IPL auction simulation. Strategize and bid for your favorite players to build the ultimate cricket team.";
-    ti = "IPL Auction";
-    ca = "Computer Vision Game";
-    ru = "<li>● Single-player game.</li><li>● Control the game with hand gestures.</li><li>● One chance per player.</li><li>● Demo shown before the game.</li><li>● Order chosen by lottery.</li><li>● Winner based on distance traveled.</li><li>● Tie decided by coins collected.</li>";
-    re = "https://dummyformlink9.com";
-    co = "tel:+914455667788"; // Dummy number
-    li = "./event-ipl-auction.html";
-    po = "https://dummyinstalink9.com";
-    break;
-  case "ev9":
-    de = "Utilize your photographic abilities to capture fleeting moments. Seize the opportunity to showcase your skills and creativity.";
-    ti = "Photography";
-    ca = "Win It Your Way";
-    ru = "<li>● Mobile phone gaming only.</li><li>● Individual event.</li><li>● Registered participants only.</li><li>● Multiple rounds conducted.</li><li>● Final winners compete against each other.</li><li>● Disqualification for malpractices.</li>";
-    re = "https://dummyformlink10.com";
-    co = "tel:+915566778899"; // Dummy number
-    li = "./event-photography.html";
-    po = "https://dummyinstalink10.com";
-    break;
-  case "ev10":
-    de = "Join our workshop on AI and Data Science. Learn how to start a company from scratch and gain valuable insights.";
-    ti = "Gaming";
-    ca = "Learn More, Grow More";
-    ru = "<li>● Offline workshop.</li><li>● Learn about Data Science and entrepreneurship.</li><li>● Free entry.</li><li>● Register now!</li>";
-    re = "https://dummyformlink11.com";
-    co = "tel:+916677889900"; // Dummy number
-    li = "./event-bgmi.html";
-    //po = "";
-    break;
-}
 
 
                 document.getElementById('reg_cont').innerHTML = de;
@@ -796,23 +615,7 @@ burger()
               document.getElementById("blurbg").style.display = "block";
               document.getElementById("blurbg").style.zIndex = "5";
             }}
-          }
-//popup shiz
-function copyTextFromElement() {
-  //let element = document.getElementById(elementID); //select the element
-  var copyTex = document.getElementById("reg_sha").href;
-  //window.location.href;
-  copyText(copyTex); //use the copyText function below
-  alert('Copied Shareable Event Link !');
-  return false;
-}
-
-
-//If you only want to put some Text in the Clipboard just use this function
-// and pass the string to copied as the argument.
-function copyText(text) {
-  navigator.clipboard.writeText(text);
-}
+ 
 </script>
 
 </section>
