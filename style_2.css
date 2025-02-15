@@ -176,7 +176,7 @@
 
 .main-title{
 
-position: fixed;    
+position: absolute;    
 color: rgb(255, 255, 255);
 font-size: 8vw;
 font-weight: 1000;
@@ -356,7 +356,7 @@ transform: rotate(90deg);
     
 }
 .baff{
-  position: fixed ;
+  position: absolute ;
   left: 50%;
   top: 75%;
   transform: translate(-50%,-75%);
@@ -367,7 +367,7 @@ transform: rotate(90deg);
   .bafte{
   
     font-weight: 100;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
     font-family: "OCRAq";
     color: #b8b8b8b4;
     

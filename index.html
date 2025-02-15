@@ -260,74 +260,75 @@ burger()
   <link rel="preload" as="font" href="./OCRAq.TTF" type="font/TTF" crossorigin="anonymous">
 
   <div class="baff">
-    <a class="bafte" id="quote" data-aos="fade" data-aos-duration="2000" data-aos-delay="2500" data-aos-once="true">For the advacement of Technology</a>
-
+    <a class="bafte" id="quote" data-aos="fade" data-aos-duration="2000" data-aos-delay="2500" data-aos-once="true">
+      For the advancement of Technology
+    </a>
   </div>
- 
-    
-  <script> 
-    var countDownDate = new Date("March 19th, 2025 00:00:00").getTime();
-    var ctt = "-- none --"
-
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-    
+  
+  <script>
+    // Countdown Timer Logic
+    var countDownDate = new Date("March 19, 2025 00:00:00").getTime();
+    var ctt = "-- none --"; // Declare ctt globally
+  
+    // Update the countdown every 1 second
+    var x = setInterval(function () {
       // Get today's date and time
       var now = new Date().getTime();
-    
-      // Find the distance between now and the count down date
+  
+      // Find the distance between now and the countdown date
       var distance = countDownDate - now;
-    
-      // Time calculations for days, hours, minutes and seconds
+  
+      // Time calculations for days, hours, minutes, and seconds
       var days = Math.floor(distance / (1000 * 60 * 60 * 24));
       var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    
-      // Display the result in the element with id="demo"
-      ctt = "<b>"+ days + "days " + hours + "hrs "
-      + minutes + "mins</b> Left";
-    
-      // If the count down is finished, write some text
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+      // Update the global ctt variable
+      ctt = "<b>" + days + " days " + hours + " hrs " + minutes + " mins " + seconds + " secs</b> left";
+  
+      // If the countdown is finished, update ctt
       if (distance < 0) {
         clearInterval(x);
-        ctt = "The Event Was Grand !";
+        ctt = "The Event Was Grand!";
       }
-    }, 20000);
-    
-       
-//special tx to baffle, i could have not hardcoded this animation in last moment 
-    var text = ["From Department Of Computer science and applications", "National Level Symposium", "Scroll Down Gently", "Website By MCA ", "Towards Advanced Level Of Science"];
+    }, 1000); // Update every 1 second
+  
+    // Text Rotation Logic
+    var text = [
+      "From Department Of Computer Science and Applications",
+      "National Level Symposium",
+      "Scroll Down Gently",
+      "Website By MCA",
+      "Towards Advanced Level Of Science",
+    ];
     var counter = 0;
     var elem = document.getElementById("quote");
     var inst = setInterval(change, 7000);
-      
-    
-    
-
+  
     function change() {
-      if (counter == 2){
-        elem.innerHTML = ctt;
-      }
-      else{
+      // Update the quote element with either text or countdown
+      if (counter == 2) {
+        elem.innerHTML = ctt; // Use the global ctt variable
+      } else {
         elem.innerHTML = text[counter];
       }
-        counter++;
-        const b = baffle('.bafte');
-
-        b.set({
-          character: '>▓▒ /█▒</ >▒░>▒ █<░ ░█▒░> ▓░/▒ ▒>░ █<▒▓ ▓▒>░',
-          speed: 120
-        });
-        
-    b.reveal(3000);
-
+      counter++;
+  
+      // Baffle.js animation
+      const b = baffle(".bafte");
+      b.set({
+        character: ">▓▒ /█▒</ >▒░>▒ █<░ ░█▒░> ▓░/▒ ▒>░ █<▒▓ ▓▒>░",
+        speed: 120,
+      });
+      b.reveal(3000);
+  
+      // Reset counter if it exceeds the text array length
       if (counter >= text.length) {
         counter = 0;
-      // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
-        
+        // clearInterval(inst); // Uncomment this if you want to stop after one cycle
+      }
     }
-}
-
   </script>
   
   <div class="main-title" ><a class="bigg clip " data-aos="zoom-out" data-aos-duration="2400" data-aos-delay="1600">TECBLAZE2K25</a></div>
