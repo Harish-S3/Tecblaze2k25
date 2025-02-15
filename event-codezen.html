@@ -54,63 +54,43 @@
     </script>
   </head>
     
+   
   <div class="loader-container">
-    <svg class="loader-svg" viewBox="0 0 1000 300" xmlns="http://www.w3.org/2000/svg">
-      <!-- Background -->
-      <rect width="100%" height="100%" fill="black"/>
-
-      <!-- Outer stroke -->
-      <text x="50%" y="50%"
-        text-anchor="middle"
-        dominant-baseline="middle"
-        font-family="Helvetica, Arial, sans-serif"
-        font-weight="900"
-        font-size="120"
-        fill="none"
-        stroke="white"
-        stroke-width="8"
-        letter-spacing="10"
-        class="text-stroke">
-        TECBLAZE25
-      </text>
-
-      <!-- Inner stroke -->
-      <text x="50%" y="50%"
-        text-anchor="middle"
-        dominant-baseline="middle"
-        font-family="Helvetica, Arial, sans-serif"
-        font-weight="900"
-        font-size="120"
-        fill="none"
-        stroke="white"
-        stroke-width="2"
-        letter-spacing="10"
-        class="text-stroke">
-        TECBLAZE2K25
-      </text>
-
-      <!-- Black fill -->
-      <text x="50%" y="50%"
-        text-anchor="middle"
-        dominant-baseline="middle"
-        font-family="Helvetica, Arial, sans-serif"
-        font-weight="900"
-        font-size="120"
-        fill="black"
-        letter-spacing="10">
-        TECBLAZE2K25
-      </text>
-    </svg>
-  </div>
+    <div class="system-info">
+      SYSTEM_ID: TEC_BLAZE_2K25<br>
+      INIT_SEQUENCE: ACTIVE<br>
+      STATUS: LOADING
+    </div>
     
-      <script>
-        // Hide loader when page is fully loaded
-        window.addEventListener('load', () => {
+    <div class="logo-container">
+      <div class="scan-line"></div>
+      <div class="logo-text glow-effect">TECBLAZE2K25</div>
+      <div class="status-text">
+        INITIALIZING SYSTEM<span class="loading-dots"></span>
+      </div>
+    </div>
+
+    <div class="diagnostics">
+      RUNNING DIAGNOSTICS...<br>
+      MEMORY: OK<br>
+      SYSTEMS: ONLINE<br>
+      SECURITY: ACTIVE
+    </div>
+  </div>
+
+  <script>
+    // Add initial 1 second delay
+    setTimeout(() => {
+      window.addEventListener('load', () => {
+        setTimeout(() => {
+          document.querySelector('.loader-container').style.opacity = 0;
           setTimeout(() => {
-            document.querySelector('.loader-container').classList.add('loader-hidden');
-          }, 2500); // Keeps loader visible for at least 2.5 seconds
-        });
-      </script>
+            document.querySelector('.loader-container').style.display = 'none';
+          }, 500);
+        }, 2400); // Disappears just before your main title appears at 2500ms
+      });
+    }, ); // Initial 1 second delay
+  </script>
     <header>
   
   
@@ -191,7 +171,7 @@
           
       
           </a>
-          <a class="cenl" id="logo_id">TECBLAZE2k+25</a>
+          <a class="cenl" id="logo_id">TECBLAZE2k25</a>
           </a>
   
   
