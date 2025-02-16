@@ -190,7 +190,7 @@ burger()
         
         
 
-        <a class="logo" href="https://harish-s3.github.io/Tecblaze2k25/#">
+        <a class="logo" href="https://tecblaze2k25.vercel.app/#">
           <img id="loid" class="yom hamburger toggler" src="./favicon2.png" alt="Logo" width="45" height="45">
       </a>
       
@@ -645,7 +645,7 @@ burger()
     <div class="loca">
            <!--  -->
       
-      <div class="locamm">
+      <div class="contact">
         <h3>Phone :</h3>
         <div class="locmi coon"> 
           <ul>
@@ -672,46 +672,56 @@ burger()
     </ul>
   </div>
   
-    <script> 
-      var slideIndex = 1;
+  <script>
+    var slideIndex = 1;
+  
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("locac");
+      var dots = document.getElementsByClassName("dot");
+  
+      if (n > slides.length) { slideIndex = 1; }
+      if (n < 1) { slideIndex = slides.length; }
+  
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" current", "");
+      }
+  
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " current";
+  
+      document.getElementById('Loconn').innerHTML = (n === 1) ? "Location" : "Contact";
+    }
+  
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+  
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+  
+    // ✅ Check if URL has #contact and show the second slide automatically
+    window.onload = function () {
+      if (window.location.hash === "#contact") {
+        slideIndex = 2;
+      } else {
+        slideIndex = 1;
+      }
       showSlides(slideIndex);
-      
-      function plusSlides(n) {
-        showSlides(slideIndex += n); 
-      }
-      
-      function currentSlide(n) { 
-        showSlides(slideIndex = n);
-      }
-      
-      function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("locac");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}    
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" current", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " current";
-        
-        if(n==1){
-        document.getElementById('Loconn').innerHTML = "Location";
-        }else{document.getElementById('Loconn').innerHTML = "Contact";}
-
-      }
-      </script></div>
+    };
+  </script>
+  </div>
   <br> <br> <br>
 
 
 
 </section>
 <div class="nii">
-<button class="collapsible" data-aos="zoom-in" data-aos-duration="400"><a style="width: 100%;position:absolute;left: 0;height:100%">Our Industry partners</a></button>
+<p class="spons" data-aos="zoom-in" data-aos-duration="400">Our Industry partners</p>
 
 <div class="sponsor-container">
   <div class="sponsor-track">
@@ -768,24 +778,6 @@ burger()
 </div>
  
     
-
-    <script>
-      var coll = document.getElementsByClassName("collapsible");
-      var i;
-      
-      for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-          this.classList.toggle("active");
-          var content = this.nextElementSibling;
-          
-          if (content.style.maxHeight){
-            content.style.maxHeight = null;
-          } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-          } 
-        });
-      }
-      </script>
 
   
       <!-- <div class="topic-head aaaa"  data-aos="zoom-in" data-aos-duration="400" >Credits</div> -->

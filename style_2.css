@@ -654,7 +654,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .spon_m {
   width: 120px;
-  height: 150px;
+  height: 130px;
   object-fit: contain;
 }
 
@@ -1876,38 +1876,21 @@ display: none;
   
 }
 
-.collapsible {
+.spons {
   background-color:var(--bkg-colr);
-  color:var(--fnt-colr);
+  color:blue;
   cursor: pointer;
   padding: 18px;
   width: 100%;
   border: none;
   text-align: center;
   outline: none;
-  font-size: 2.8vw;
+  font-size: 3.5vw;
   font-weight: 500;
   border-bottom: 2px solid transparent;
   transition: 0.3s ease-in-out;
 }
 
-
-.collapsible:after {
-  content: "\002B";
-  
-  background-color:var(--bkg-colr);
-  color: white;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-  background-color:transparent;
-  transition: 0.3s ease-in-out;
-}
-
-.active:after {
-  content: "\2212";
-  color: white;
-}
 
 .content {
   /* padding: 0 18px; */
