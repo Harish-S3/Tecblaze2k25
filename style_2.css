@@ -785,6 +785,13 @@ background-size: 80%;
     left: -9%;
 
   }
+  @media (max-width: 768px) {
+    .p2 {
+        background-size: 100%;  /* Make it more visible on smaller screens */
+        left: 0%; /* Center it */
+        top: 5%;
+    }
+}
 
 .container {
   width: 100%;
@@ -1337,7 +1344,7 @@ font-size: 32px;
   width: 300px;
   height: unset;
 opacity: 1;
-z-index: 4;top: 50%;
+z-index: 4;top: 21%;
 transform: translate(0%, -50%);
 }
 
@@ -1889,7 +1896,12 @@ display: none;
   font-weight: 500;
   border-bottom: 2px solid transparent;
   transition: 0.3s ease-in-out;
+  
 }
+@media (max-width: 768px) {
+  .spons {
+     font-size: 6vw;
+  }}
 
 
 .content {
