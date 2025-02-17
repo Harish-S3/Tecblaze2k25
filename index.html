@@ -36,6 +36,7 @@
 
     <link rel="stylesheet" href="./style_2.css" />
     
+    
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
@@ -210,11 +211,11 @@ burger()
             <div class="nbox"></div>
           </li>
           <li class="nav-item" data-aos="fade-left" data-aos-duration="500" data-aos-delay="2550">
-            <a href="#Locon" class="nav-link" onclick="cls_b();currentSlide(1)">Location</a>
+            <a href="#Locon" class="nav-link" onclick="cls_b()">Location</a>
             <div class="nbox"></div>
           </li>
           <li class="nav-item" data-aos="fade-left" data-aos-duration="500" data-aos-delay="2600">
-            <a href="#Locon" class="nav-link" onclick="cls_b();currentSlide(2)">Contact</a>
+            <a href="#contact" class="nav-link" onclick="cls_b()">Contact</a>
             <div class="nbox"></div>
           </li>
           </div>
@@ -614,176 +615,132 @@ burger()
 
 </section>
 
-<section class="section s2" id="Locon"><div class="topic-head ano" id="Loconn" style="    padding-top: 10vh;" data-aos="zoom-in" data-aos-duration="400"  >Location</div>
-  
-  <div class="buttnex" style="display: none;">
-    <a class="prev" href="javascript:plusSlides(-1)">&#10094;</a> 
-      <a class="next"href="javascript:plusSlides(1)">&#10095;</a>
-    </div>
-  <div class="locao" data-aos="zoom-out-down"  data-aos-duration="300"  >
-  
-  <div class="locac fade"data-aos="zoom-out-down"  data-aos-duration="600"> 
-  <div>
-  <div class="loca ">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124385.38496983!2d80.0373560433594!3d13.03291590000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261e35f9f24f5%3A0x5944887e2cca85af!2sSRMIST%20Ramapuram%20Science%20%26%20Humanities!5e0!3m2!1sen!2sin!4v1738999702886!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <!-- loading="lazy" -->
-    
-    <div class="locamm">
-      <h3>SRM Institute Of Technology</h3>
-      <div class="locmi"> 
-        <br>Bharathi Salai,
-        <br>Ramapuram,
-        <br>Chennai, Tamil Nadu
-        <br>PIN : 600089
-      </h4>
-      </div>
-      </div></div>
-  </div>
-  </div>
 
-  <div class="locac fade" >
-    <div>
-    <div class="loca">
-           <!--  -->
-      
-      <div class="contact">
-        <h3>Phone :</h3>
-        <div class="locmi coon"> 
-          <ul>
-          <li><a href="tel:+91111111" target="_blank">Madhumitha (President | +9111111111)</a></li>
-          <li><a href="tel:+912222222" target="_blank">Divakar (Vice President | +9122222222222)</a></li>
-          <li><a href="tel:+913333333" target="_blank">Aravind (Secretary | +913333333)</a></li>
-          <li><a href="tel:+91444444" target="_blank">Mohammed Aasif (Joint-Secretary | +91444444)</a></li>
-          <li><a href="tel:+9155555" target="_blank">Abdul Hakeem (Treasurer| +915555)</a></li>
-          <li><a href="tel:+9177777" target="_blank">Ricky valen xaiver(Program-Director | +91777777)</a></li>
-          <li><a href="tel:+9188888" target="_blank">Harish (Program-Director |+918888888)</a></li>
-        
-        
-        
-        </ul>
-        </h4>
+
+<!-- Location Section -->
+<section class="section s2" id="Locon">
+  <div class="topic-head ano" id="Loconn" style="padding-top: 10vh;" data-aos="zoom-in" data-aos-duration="400">Location</div>
+  <div class="locao" data-aos="zoom-out-down" data-aos-duration="300">
+    <div class="locac fade" data-aos="zoom-out-down" data-aos-duration="600">
+      <div class="loca">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124385.38496983!2d80.0373560433594!3d13.03291590000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261e35f9f24f5%3A0x5944887e2cca85af!2sSRMIST%20Ramapuram%20Science%20%26%20Humanities!5e0!3m2!1sen!2sin!4v1738999702886!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="locamm">
+          <h3>SRM Institute Of Technology</h3>
+          <div class="locmi">
+            <br>Bharathi Salai,
+            <br>Ramapuram,
+            <br>Chennai, Tamil Nadu
+            <br>PIN : 600089
+          </div>
         </div>
-        </div></div>
+      </div>
     </div>
-    </div>
-  <div class="dotstyle dotstyle-scaleup ddo">
-    <ul>
-      <li class="dot"><a href="javascript:currentSlide(1)">1 | Location</a></li>
-      <li class="dot"><a href="javascript:currentSlide(2)">2 | Contact</a></li>  
-    </ul>
   </div>
-  
-  <script>
-    var slideIndex = 1;
-  
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("locac");
-      var dots = document.getElementsByClassName("dot");
-  
-      if (n > slides.length) { slideIndex = 1; }
-      if (n < 1) { slideIndex = slides.length; }
-  
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" current", "");
-      }
-  
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " current";
-  
-      document.getElementById('Loconn').innerHTML = (n === 1) ? "Location" : "Contact";
+  <style>
+    .loca iframe {
+      width: 100%;
+      max-width: 400px; /* Adjust as needed */
+      height: 300px; /* Adjust as needed */
+      border: 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
-  
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
+    
+    .contact {
+      max-width: 400px; /* Adjust as needed */
+      margin: 0 auto; /* Center the contact section */
     }
-  
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
+    
+    .locmi.coon ul li a {
+      font-size: 1rem; /* Reduce font size for contact links */
     }
-  
-    // ✅ Check if URL has #contact and show the second slide automatically
-    window.onload = function () {
-      if (window.location.hash === "#contact") {
-        slideIndex = 2;
-      } else {
-        slideIndex = 1;
-      }
-      showSlides(slideIndex);
-    };
-  </script>
-  </div>
-  <br> <br> <br>
-
-
-
+  </style>
 </section>
-<div class="nii">
-<p class="spons" data-aos="zoom-in" data-aos-duration="400">Our Industry partners</p>
 
-<div class="sponsor-container">
-  <div class="sponsor-track">
-    <!-- First group -->
-    <div class="sponsor-group">
-      <a class="spon" href="https://ictacademy.in/pages/index.aspx" target="_blank">
-        <img class="spon_m" src="./ictacademy.png" alt="ICT Academy">
-      </a>
-      <a class="spon" href="https://cirf.co.in/" target="_blank">
-        <img class="spon_m" src="./cirf.jpeg" alt="CIRF">
-      </a>
-      <a class="spon" href="https://www.plantgreeninertia.com/" target="_blank">
-        <img class="spon_m" src="./plantgreeninertia.jpeg" alt="Plant Green Inertia">
-      </a>
-      <a class="spon" href="https://www.8queens.com/" target="_blank">
-        <img class="spon_m" src="./8queens.png" alt="8Queens">
-      </a>
-      <a class="spon" href="https://senstornet.com/" target="_blank">
-        <img class="spon_m" src="./senstornet.jpeg" alt="Senstornet">
-      </a>
-      <a class="spon" href="https://logicalpivot.in/" target="_blank">
-        <img class="spon_m" src="./logicalpivot.png" alt="Logical Pivot">
-      </a>
-      <a class="spon" href="https://www.dverselabs.com/" target="_blank">
-        <img class="spon_m" src="./dverselabs.png" alt="Logical Pivot">
+<!-- Contact Section -->
+<section class="section s2" id="contact">
+  <div class="topic-head ano" style="padding-top: 10vh;" data-aos="zoom-in" data-aos-duration="400">Contact</div>
+  <div class="locao" data-aos="zoom-out-down" data-aos-duration="300">
+    <div class="locac fade">
+      <div class="contact">
+        <div class="locmi coon">
+          <ul>
+            <li><a href="tel:+918667543912" target="_blank">Madhumitha (President | +918667543912)</a></li>
+            <li><a href="tel:+919342097475" target="_blank">Divakar (Vice President | 919342097475)</a></li>
+            <li><a href="tel:+918610194541" target="_blank">Aravind (Secretary | +918610194541)</a></li>
+            <li><a href="tel:+919344877139" target="_blank">Mohammed Aasif (Joint-Secretary | +919344877139)</a></li>
+            <li><a href="tel:+919361224100" target="_blank">Abdul Hakeem (Treasurer| +919361224100)</a></li>
+            <li><a href="tel:+919940650286" target="_blank">Ricky valen xaiver(Program-Director | +919940650286)</a></li>
+            <li><a href="tel:+919176646245" target="_blank">Harish (Program-Director | +919176646245)</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    .loca iframe {
+      width: 100%;
+      max-width: 400px; /* Adjust as needed */
+      height: 300px; /* Adjust as needed */
+      border: 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .contact {
+      max-width: 400px; /* Adjust as needed */
+      margin: 0 auto; /* Center the contact section */
+    }
+    
+    .locmi.coon ul li a {
+      font-size: 1rem; /* Reduce font size for contact links */
+    }
+  </style>
+</section>
+
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init();</script>
+
+<div class="industry-partners">
+  <p class="heading">Our Industry Partners</p>
+  <div class="sponsor-cards">
+    <div class="sponsor-card">
+      <a href="https://www.plantgreeninertia.com/" target="_blank">
+        <img src="./plantgreeninertia.jpeg" alt="Plant Green Inertia">
       </a>
     </div>
-    <!-- Second group (duplicate for seamless loop) -->
-    <div class="sponsor-group">
-      <a class="spon" href="https://ictacademy.in/pages/index.aspx" target="_blank">
-        <img class="spon_m" src="./ictacademy.png" alt="ICT Academy">
+    <div class="sponsor-card">
+      <a href="https://www.8queens.com/" target="_blank">
+        <img src="./8queens.png" alt="8Queens">
       </a>
-      <a class="spon" href="https://cirf.co.in/" target="_blank">
-        <img class="spon_m" src="./cirf.jpeg" alt="CIRF">
+    </div>
+    <div class="sponsor-card">
+      <a href="https://senstornet.com/" target="_blank">
+        <img src="./senstornet.jpeg" alt="Senstornet">
       </a>
-      <a class="spon" href="https://www.plantgreeninertia.com/" target="_blank">
-        <img class="spon_m" src="./plantgreeninertia.jpeg" alt="Plant Green Inertia">
+    </div>
+    <div class="sponsor-card">
+      <a href="https://logicalpivot.in/" target="_blank">
+        <img src="./logicalpivot.png" alt="Logical Pivot">
       </a>
-      <a class="spon" href="https://www.8queens.com/" target="_blank">
-        <img class="spon_m" src="./8queens.png" alt="8Queens">
+    </div>
+    <div class="sponsor-card">
+      <a href="https://www.dverselabs.com/" target="_blank">
+        <img src="./dverselabs.png" alt="Dverse Labs">
       </a>
-      <a class="spon" href="https://senstornet.com/" target="_blank">
-        <img class="spon_m" src="./senstornet.jpeg" alt="Senstornet">
-      </a>
-      <a class="spon" href="https://logicalpivot.in/" target="_blank">
-        <img class="spon_m" src="./logicalpivot.png" alt="Logical Pivot">
-      </a>
-    </a>
-    <a class="spon" href="https://www.dverselabs.com/" target="_blank">
-      <img class="spon_m" src="./dverselabs.png" alt="Logical Pivot">
-    </a>
     </div>
   </div>
 </div>
+
+
  
     
 
   
       <!-- <div class="topic-head aaaa"  data-aos="zoom-in" data-aos-duration="400" >Credits</div> -->
 
-<div class="crec"><a class="credb" href="https://github.com/Harish-S3/Tecblaze2k25/credits.html" target="_blank" data-aos="zoom-in" data-aos-duration="400">Credits</a></div>
+<div class="crec"><a class="credb" href=" " target="_blank" data-aos="zoom-in" data-aos-duration="400">Credits</a></div>
 </div>
 
 <section class="thunder">
@@ -806,8 +763,8 @@ See you on March 19th
         <span class="screen-reader-text">Email</span>
         <i class="fa fa-envelope"   aria-hidden="true"></i> 
       </a>
-      <a target="_blank" href="tel:+9122222222222">
-        <span class="screen-reader-text">Phone | Madhumitha (+9123121231, Symposium-President-2025)</span>
+      <a target="_blank" href="tel:+919342097475">
+        <span class="screen-reader-text">Phone | Divakar (Vice President | +919342097475)</span>
         <i class="fa fa-phone"   aria-hidden="true"></i> 
       </a>
       <a target="_blank" href="https://maps.app.goo.gl/qA994ACfJLEJLEmY7">
@@ -825,7 +782,7 @@ See you on March 19th
 
 <div class="con_m">
 <div class="bl">
-<a href="#Locon" onclick="currentSlide(2)">Contact</a>
+<a href="#contact">Contact</a>
 <a href="#Events">Events</a> 
 </div>
 <li class="links_b">

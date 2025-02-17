@@ -629,47 +629,68 @@ body::-webkit-scrollbar-thumb:hover {
 .sermm {
   padding: 2vw;
 }
-.sponsor-container {
+
+.industry-partners {
   width: 100%;
-  overflow: hidden;
-  background: white;
+  background-color: white;
   padding: 20px 0;
+  text-align: center;
 }
 
-.sponsor-track {
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.sponsor-cards {
   display: flex;
-  width: fit-content;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.sponsor-group {
+.sponsor-card {
+  width: 150px;
+  height: 150px; /* Ensure the card is square */
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
   display: flex;
-  gap: 60px;
-  animation: scroll 30s linear infinite;
-  padding-right: 60px;
+  align-items: center;
+  justify-content: center;
 }
 
-.spon {
-  flex: 0 0 auto;
+.sponsor-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-.spon_m {
-  width: 120px;
-  height: 130px;
-  object-fit: contain;
+.sponsor-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensure the image fits within the square */
+  border-radius: 8px;
 }
 
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sponsor-card {
+    width: 120px;
+    height: 120px;
   }
-  100% {
-    transform: translateX(-100%);
+}
+
+@media (max-width: 480px) {
+  .sponsor-card {
+    width: 100px;
+    height: 100px;
   }
 }
 
-.sponsor-group:hover {
-  animation-play-state: paused;
-}
+
 .credb{
   background-color:var(--bkg-colr);
   color:var(--fnt-colr);
@@ -1310,7 +1331,10 @@ font-size: 32px;
   position: absolute;
   text-align: center;
   width: 100%;
-  bottom: 14%;
+  bottom: 10%;
+  font-weight: bolder;
+  font-size: larger;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: rgba(255, 255, 255, 0.8);
   font-weight: 400;
   background-color: #00000021;
