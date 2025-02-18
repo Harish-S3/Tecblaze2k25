@@ -964,16 +964,13 @@ font-size: 32px;
   -webkit-text-stroke: 1px var(--fnt-colr);;
 }
 
-
 .text-1 { 
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   mix-blend-mode: difference;
-  position: fixed; /* Ensure it stays in place */
-  top: 50px; /* Adjust as needed */
-  left: 50%;
-  transform: translateX(-50%);
-}
+ display:none;
+  top: 0;
+} 
 .text-2{ 
   opacity: 0;
   transition: 0.3s ease-in-out;
