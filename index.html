@@ -129,75 +129,23 @@
 
 <a data-aos="fade-in" data-aos-duration="600" data-aos-delay="2700" data-aos-once="true"><input id="dow" class="theme-switcher ts2" autocomplete="off"></a>
 
-  
+<!-- HTML Structure -->
+<div class="header-container" id="header-container">
+  <div id="navbar">
+    <div class="navbar">
+      <!-- Burger Menu -->
+      <div class="burger burger-slip" id="burger_menu">
+        <div class="burger-lines"></div>
+      </div>
 
-<!--  data-aos="fade-in-up" data-aos-easing="ease-in-sine" data-aos-duration="2400" data-aos-once="true" -->
-    <div class="header-container" id="header-container"> 
-      <div id="navbar">
-      <div class="navbar" > 
-
-        <div class="burger burger-slip" id="burger_menu" onclick="burger()">
-          <div class="burger-lines"></div>
-  
-          <script>
-
-          window.addEventListener("mouseup", function (event) {
-
-            var box = document.querySelector(".nav-item");
-            var box1 = document.querySelector("#invi");
-
-            if (event.target == box || event.target.parentNode == box) {
-
-              burger()
-            }
-            if (event.target == box1 || event.target.parentNode == box1) {
-
-burger()
-}
-          });
-
-            function burger() { 
-            
-            var myElement = document.querySelector("#burger_menu");
-
-              var myCover = document.querySelector("#cover");
-              var myinvi = document.querySelector("#invi");
-  
-              if (myElement.classList.contains("open")) {
-                myElement.classList.remove("open");
-                myCover.classList.remove("cover-open");
-                myinvi.classList.remove("invi-open");
-                
-              $('.sid').css({display: "none"});
-              document.getElementById("blurbg").style.display = "none";
-                
-              } else {
-                myElement.classList.add("open");
-                myCover.classList.add("cover-open");
-                myinvi.classList.add("invi-open");//
-                
-              $('.sid').css({display: "block"});
-              document.getElementById("blurbg").style.display = "block";
-                
-              }
-            }
-          </script>
-          
-          
-        </div>
-        
-        
-
-        <a class="logo" href="https://tecblaze2k25.vercel.app/#">
-          <img id="loid" class="yom hamburger toggler" src="./favicon2.png" alt="Logo" width="45" height="45">
+      <!-- Logo -->
+      <a class="logo" href="https://tecblaze2k25.vercel.app/#">
+        <img id="loid" class="yom hamburger toggler" src="./favicon2.png" alt="Logo" width="45" height="45">
       </a>
-      
-        <a class="cenl" href="https://tecblaze2k25.vercel.app/#" id="logo_id">Tecblaze25</a>
 
-
-
-        <ul class="nav-menu">
-          <div class="invi" id="invi" data-aos="fade-left" data-aos-duration="500" data-aos-delay="2400">
+      <!-- Navigation Menu -->
+      <ul class="nav-menu">
+        <div class="invi" id="invi" data-aos="fade-left" data-aos-duration="500" data-aos-delay="2400">
           <li class="nav-item">
             <a href="#" class="nav-link" onclick="cls_b()">Home</a>
             <div class="nbox"></div>
@@ -218,11 +166,80 @@ burger()
             <a href="#contact" class="nav-link" onclick="cls_b()">Contact</a>
             <div class="nbox"></div>
           </li>
-          </div>
-        </ul> 
-      </div>
+        </div>
+      </ul>
     </div>
-  </header>
+  </div>
+
+  <!-- Add these elements right after the navbar -->
+  <div id="cover"></div>
+  <div id="blurbg"></div>
+  <div class="sid"></div>
+</div>
+
+<!-- JavaScript -->
+<script>
+function burger() {
+  const burgerMenu = document.querySelector("#burger_menu");
+  const cover = document.querySelector("#cover");
+  const invi = document.querySelector("#invi");
+  const blurbg = document.getElementById("blurbg");
+  const sid = document.querySelector('.sid');
+
+  if (burgerMenu && cover && invi && blurbg && sid) {
+    if (burgerMenu.classList.contains("open")) {
+      burgerMenu.classList.remove("open");
+      cover.classList.remove("cover-open");
+      invi.classList.remove("invi-open");
+      sid.style.display = "none";
+      blurbg.style.display = "none";
+    } else {
+      burgerMenu.classList.add("open");
+      cover.classList.add("cover-open");
+      invi.classList.add("invi-open");
+      sid.style.display = "block";
+      blurbg.style.display = "block";
+    }
+  }
+}
+
+function cls_b() {
+  const burgerMenu = document.querySelector("#burger_menu");
+  const cover = document.querySelector("#cover");
+  const invi = document.querySelector("#invi");
+  const blurbg = document.getElementById("blurbg");
+  const sid = document.querySelector('.sid');
+
+  if (burgerMenu && cover && invi && blurbg && sid) {
+    burgerMenu.classList.remove("open");
+    cover.classList.remove("cover-open");
+    invi.classList.remove("invi-open");
+    sid.style.display = "none";
+    blurbg.style.display = "none";
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const burgerMenu = document.querySelector("#burger_menu");
+  if (burgerMenu) {
+    burgerMenu.addEventListener("click", burger);
+  }
+
+  // Close menu when clicking outside
+  document.addEventListener("click", function(event) {
+    const navMenu = document.querySelector(".nav-menu");
+    const burgerMenu = document.querySelector("#burger_menu");
+
+    if (navMenu && burgerMenu) {
+      if (!navMenu.contains(event.target) && !burgerMenu.contains(event.target)) {
+        cls_b();
+      }
+    }
+  });
+});
+</script>
+
+
 <section>
 
   
@@ -242,7 +259,7 @@ burger()
   
   <script>
     // Countdown Timer Logic
-    var countDownDate = new Date("March 19, 2025 00:00:00").getTime();
+    var countDownDate = new Date("March 19, 2025 08:00:00").getTime();
     var ctt = "-- none --"; // Declare ctt globally
   
     // Update the countdown every 1 second
