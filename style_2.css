@@ -796,23 +796,16 @@ background-size: 80%;
 }
 .p2 {
   
-    background-image: url("./tb.png"); 
-    left: 3%;
+    background-image: url("./tbb.png"); 
   background-position: center;
   background-size: contain;background-repeat: no-repeat;
-  background-size: 170%;
-    border-radius:  0%;
-    top: 2%;
-    left: -9%;
+  background-size: 69%;
+    border-radius: -50%;
+    top: -4%;
+    left: -3%;
 
   }
-  @media (max-width: 768px) {
-    .p2 {
-        background-size: 100%;  /* Make it more visible on smaller screens */
-        left: 0%; /* Center it */
-        top: 5%;
-    }
-}
+
 
 .container {
   width: 100%;
