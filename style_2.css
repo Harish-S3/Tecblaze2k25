@@ -967,15 +967,16 @@ font-size: 32px;
 
 .text-1 { 
   opacity: 0;
-  transition: 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
   mix-blend-mode: difference;
-  position: absolute;
-  top: 0;
-} 
+  position: fixed; /* Ensure it stays in place */
+  top: 50px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+}
 .text-2{ 
   opacity: 0;
   transition: 0.3s ease-in-out;
-position: absolute;
   mix-blend-mode: difference;
   font-family: 'Nirmala UI';
   font-style: normal;top: 0;
