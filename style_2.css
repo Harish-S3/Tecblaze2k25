@@ -969,11 +969,13 @@ font-size: 32px;
   opacity: 0;
   transition: 0.3s ease-in-out;
   mix-blend-mode: difference;
+  position: absolute;
   top: 0;
 } 
 .text-2{ 
   opacity: 0;
   transition: 0.3s ease-in-out;
+position: absolute;
   mix-blend-mode: difference;
   font-family: 'Nirmala UI';
   font-style: normal;top: 0;
