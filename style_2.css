@@ -807,6 +807,7 @@ background-size: 80%;
   }
 .registerbutton {
   padding: 10px 20px;
+  color:black;
   border: 2px solid var(--fnt-colr);
   border-radius: 5px;
   font-size: 1rem;
