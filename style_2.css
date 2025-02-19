@@ -496,12 +496,11 @@ width: 100%;
       left: 10%;
       transform: translate(-50%,0%);
       font-weight: 500;
-      font-size: 30px;
+      font-size: 2vw;
       padding: 10px 20px 10px 20px;
       /*
       border: 2px solid ;*/
       cursor: pointer;
-      color: white;
     }
 .cenl:hover{
 letter-spacing: 0.2em;
@@ -808,7 +807,7 @@ background-size: 80%;
   }
 .registerbutton {
   padding: 10px 20px;
-  color:black;
+  color:black
   border: 2px solid var(--fnt-colr);
   border-radius: 5px;
   font-size: 1rem;
