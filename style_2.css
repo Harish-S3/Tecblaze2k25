@@ -805,6 +805,21 @@ background-size: 80%;
     left: -3%;
 
   }
+.registerbutton {
+  padding: 10px 20px;
+  border: 2px solid var(--fnt-colr);
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.registerbutton:hover {
+  background-color: gold;
+  color: var(--bkg-colr);
+}
+
 
 
 .container {
@@ -2390,6 +2405,7 @@ display: none;
     transition: 0.3s all;
     -webkit-tap-highlight-color: transparent;
     z-index: 2;
+    display: none;
   
     right: 5%;
       top: 55%;
