@@ -496,11 +496,12 @@ width: 100%;
       left: 10%;
       transform: translate(-50%,0%);
       font-weight: 500;
-      font-size: 2vw;
+      font-size: 1vw;
       padding: 10px 20px 10px 20px;
       /*
       border: 2px solid ;*/
       cursor: pointer;
+      color: white;
     }
 .cenl:hover{
 letter-spacing: 0.2em;
